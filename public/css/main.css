@@ -1,0 +1,162 @@
+/**************
+General
+**************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h2, p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Gloria Hallelujah', Georgia, sans-serif;
+  background: #c25975;
+}
+
+.queryContainer > h1 > a {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.1em;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.queryContainer > h1 > a:focus,
+.queryContainer > h1 > a:hover {
+  color: #5b59c2;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.queryContainer {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.queryContainer > h1 {
+  text-align: center;
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Gloria Hallelujah', Georgia, sans-serif;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  border: 5px solid transparent;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.searchInput:focus {
+  font-weight: bold;
+  border: 5px solid #5b59c2;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.innerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+}
+
+.searchButton,
+.removeItems {
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Gloria Hallelujah', Georgia, sans-serif;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchButton:hover,
+.removeItems:hover,
+.searchButton:focus,
+.removeItems:focus {
+  font-weight: bold;
+  color: #fff;
+  background: #3e474f;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.wikiResults {
+  margin: 0 auto;
+}
+
+.itemStyle {
+  background: #3e474f;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+  line-height: 1.4;
+}
+
+.itemStyle > a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.itemStyle > a:focus,
+.itemStyle > a:hover {
+  font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.itemStyle > a > p {
+  padding-top: 10px;
+}
+
+.itemStyle button {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  font-family: 'Gloria Hallelujah', Georgia, sans-serif;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.itemStyle button:hover,
+.itemStyle button:focus {
+  font-weight: bold;
+  font-size: 1.2em;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media only screen and (min-width: 600px) {
+  .wikiResults {
+    width: 65%;
+  }
+
+  .queryContainer {
+    width: 500px;
+  }
+  
+  .itemStyle {
+    font-size: 1.2em;
+  }
+}

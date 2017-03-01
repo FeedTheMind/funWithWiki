@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/main.css'>
+    <title>Wikipedia Search</title>
+  </head>
+  <body>
+    <div class='queryContainer'>
+      <h1>
+        <a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>Ready to Start Searching?</a>
+      </h1>
+      <input type='text' placeholder='Search . . .' class='searchInput'>
+
+      <div class='innerContainer'>
+        <button class='searchButton'>Submit</button>
+        <button class='removeItems'>Clear</button>
+      </div>
+    </div> <!-- .queryContainer -->
+
+    <div class='wikiResults'></div>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+    <script src='js/app.js'></script>
+  </body>
+</html>
+
+<!-- Goals -->
+
+<!-- 
+
+1) Create application that populates page with information from Wikipedia = check
+2) Use Node to set up testing environment = check
+3) Allow user(s) option to remove one item at a time = check
+4) Give user(s) a "clear" button that will remove everything = check
+
+ -->
