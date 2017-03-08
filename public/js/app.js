@@ -59,12 +59,12 @@ $(document).ready( () => {
             // Divide results into hrefs, headings, and paragraphs
               // Also, have button with letter x, so that user can delete one item (or more)
                 // target='_blank' allows user to click a link and not lose searches
-            '<div class="itemStyle clear">' + 
-              '<button>x</button><a href=' + data3 + " target='_blank'>" +
-                '<h2>' + data1 + '</h2>' +
-                '<p>' + data2 + '</p>' + 
-              '</a>' + 
-            '</div>');
+            `<div class="itemStyle clear">
+              <button>x</button><a href=${data3} target="_blank">
+                <h2>${data1}</h2>
+                <p>${data2}</p>
+              </a>
+            </div>`);
         }    
       }
     });
